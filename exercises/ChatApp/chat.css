@@ -1,0 +1,39 @@
+.display-panel {
+  display: flex;
+  flex-direction: row;
+}
+
+.users {
+  border: 1px dashed red;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.messages {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.message {
+  display: flex;
+  flex-direction: row;
+}
+
+.sender-info {
+  border: 1px dashed blue;
+}
+
+.message-info {
+  border: 1px dashed red;
+}
+
+.avatar {
+  height: 100px;
+  width: 100px;
+}
+
+.outgoing {
+  border: 1px dashed blue;
+}
