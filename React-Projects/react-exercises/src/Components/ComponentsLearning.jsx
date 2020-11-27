@@ -4,6 +4,7 @@ import Welcome from './Welcome.jsx';
 import Clock from './Clock.jsx';
 import ActionLink from './ActionLink.jsx';
 import Toggle from './Toggle.jsx';
+import LoggingButton from './LoggingButton.jsx';
 
 
 class ComponentsLearning extends Component {
@@ -20,10 +21,11 @@ class ComponentsLearning extends Component {
                 <ActionLink />
                 <li>Toggle Component</li>
                 <Toggle />
+                <li>Loggin Button</li>
+                <LoggingButton />
             </div>
         );
     }
 }
 
 export default ComponentsLearning;
-

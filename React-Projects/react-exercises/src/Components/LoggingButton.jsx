@@ -7,9 +7,18 @@ class LoggingButton extends React.Component {
       console.log('this is:', this);
     }
   
+    // render() {
+    //   return (
+    //     <button onClick={this.handleClick}>
+    //       Click me
+    //     </button>
+    //   );
+    // }
+
     render() {
+      // 此语法确保 `handleClick` 内的 `this` 已被绑定。
       return (
-        <button onClick={this.handleClick}>
+        <button onClick={() => this.handleClick()}>
           Click me
         </button>
       );
