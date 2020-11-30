@@ -23,4 +23,6 @@ class LoggingButton extends React.Component {
         </button>
       );
     }
-  }
+}
+
+export default LoggingButton;

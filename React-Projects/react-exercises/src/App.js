@@ -5,7 +5,7 @@ import { Switch, Route, Link } from "react-router-dom";
 import Home from "./Components/Home.jsx";
 import ComponentsLearning from './Components/ComponentsLearning.jsx';
 import CommentPage from './CommentPageComponents/CommentPage/CommentPage';
-
+import LoginControl from './LoginControl/LoginControl.jsx';
 
 // function App() {
 //   return (
@@ -40,6 +40,7 @@ function App() {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/ComponentsLearning">Components Learning</Link></li>
           <li><Link to="/CommentPage">React Comment Page</Link></li>
+          <li><Link to="/Logincontrol">Conditonal Rendering 条件渲染</Link></li>
         </ul>
       </nav>
     </header>
@@ -48,6 +49,7 @@ function App() {
       <Route path="/" exact component={Home} />
       <Route path="/ComponentsLearning" exact component={ComponentsLearning} />
       <Route path="/CommentPage" exact component={CommentPage}/>
+      <Route path="/Logincontrol" eact component={LoginControl}/>
     </Switch>
     </>
   );
