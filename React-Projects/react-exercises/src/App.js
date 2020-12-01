@@ -6,6 +6,8 @@ import Home from "./Components/Home.jsx";
 import ComponentsLearning from './Components/ComponentsLearning.jsx';
 import CommentPage from './CommentPageComponents/CommentPage/CommentPage';
 import LoginControl from './LoginControl/LoginControl.jsx';
+import Mailbox from './Mailbox/Mailbox.jsx';
+import WarningPage from './WarningPage/WarningPage';
 
 // function App() {
 //   return (
@@ -31,6 +33,9 @@ import LoginControl from './LoginControl/LoginControl.jsx';
 
 
 /** 4.1 Composing Components */
+
+
+
 function App() {
   return (
     <>
@@ -40,7 +45,10 @@ function App() {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/ComponentsLearning">Components Learning</Link></li>
           <li><Link to="/CommentPage">React Comment Page</Link></li>
-          <li><Link to="/Logincontrol">Conditonal Rendering 条件渲染</Link></li>
+          <li><Link to="/Logincontrol">Conditonal Rendering 条件渲染 1 元素变量 greeting</Link></li>
+          <li><Link to="/Mailbox">Conditonal Rendering 条件渲染 2 与运算符 && unmessages</Link></li>
+          <li><Link to="/WarningPage">Conditonal Rendering 条件渲染 3 阻止组件渲染 Warning</Link></li>
+
         </ul>
       </nav>
     </header>
@@ -49,7 +57,10 @@ function App() {
       <Route path="/" exact component={Home} />
       <Route path="/ComponentsLearning" exact component={ComponentsLearning} />
       <Route path="/CommentPage" exact component={CommentPage}/>
-      <Route path="/Logincontrol" eact component={LoginControl}/>
+      <Route path="/Logincontrol" exact component={LoginControl}/>
+      <Route path="/Mailbox" exact component={Mailbox}/>
+      <Route path="/WarningPage" exact component={WarningPage}/>
+
     </Switch>
     </>
   );
