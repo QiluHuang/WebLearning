@@ -10,6 +10,8 @@ import Mailbox from './Mailbox/Mailbox.jsx';
 import WarningPage from './WarningPage/WarningPage.jsx';
 import NumberList from './NumberList/NumberList/NumberList.jsx';
 import Blog from './Blog/Blog';
+import NameForm from './Forms/NameForm/NameForm';
+import FlavorForm from './Forms/FlavorForm/FlavorForm';
 
 // function App() {
 //   return (
@@ -52,6 +54,8 @@ function App() {
           <li><Link to="/ConditionalRendering/WarningPage">Conditonal Rendering 条件渲染 3 阻止组件渲染 Warning</Link></li>
           <li><Link to="/ListsAndKeys/NumberList">Lists and Keys 列表&Key 1 基础列表组件 </Link></li>
           <li><Link to="/ListsAndKeys/Blog">Lists and Keys 列表&Key 2 key 只是在兄弟节点之间必须唯一 </Link></li>
+          <li><Link to="/Forms/NameForm">Forms 表格 1 受控组件</Link></li>
+          <li><Link to="/Forms/FlavorForm">Forms 表格 2 select标签</Link></li>
 
         </ul>
       </nav>
@@ -66,6 +70,9 @@ function App() {
       <Route path="/ConditionalRendering/WarningPage" exact component={WarningPage}/>
       <Route path="/ListsAndKeys/NumberList" exact component={NumberList}/>
       <Route path="/ListsAndKeys/Blog" exact component={Blog}/>
+      <Route path="/Forms/NameForm" exact component={NameForm}/>
+      <Route path="/Forms/FlavorForm" exact component={FlavorForm}/>
+
 
     </Switch>
     </>
