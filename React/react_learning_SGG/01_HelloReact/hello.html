@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01_HelloReact</title>
+</head>
+<body>
+    <div id="sample"></div>
+
+    <script type="text/javascript" src="../js/react.development.js"></script>
+    <script type="text/javascript" src="../js/react-dom.development.js"></script>
+    <script type="text/javascript" src="../js/babel.min.js"></script>
+
+    <script type="text/babel">
+        function Hello() {
+            return <h1>Hello React</h1>
+        }
+
+        // React
+        ReactDOM.render(<Hello />, document.getElementById("sample"))
+
+
+        // 传统JavaScript
+        var h1 = document.createElement("h1");
+        h1.innerHTML = "Hello World again";
+        document.getElementById("sample").appendChild(h1);
+    </script>
+</body>
+</html>

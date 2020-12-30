@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSX_Code_Challenge</title>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/javascript" src="./js/react.development.js"></script>
+    <script type="text/javascript" src="./js/react-dom.development.js"></script>
+    <script type="text/javascript" src="./js/babel.min.js"></script>
+
+    <script type="text/babel">
+        function List () {
+            return (
+              <div>
+                <h1>My Favourite Foods</h1>
+                <ul>
+                  <li>Bacon</li>
+                  <li>Jamon</li>
+                  <li>Noodles</li>
+                </ul>
+              </div>
+            )
+        }
+          
+        ReactDOM.render(<List />, document.getElementById("root"))
+    </script>
+</body>
+</html>

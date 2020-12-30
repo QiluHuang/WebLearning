@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSX_Code_Challenge</title>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/javascript" src="./js/react.development.js"></script>
+    <script type="text/javascript" src="./js/react-dom.development.js"></script>
+    <script type="text/javascript" src="./js/babel.min.js"></script>
+
+    <script type="text/babel">
+        const fName = "Luna";
+        const lName = "Huang";
+        const num = Math.floor(Math.random() * 10);
+        
+        const currDate = new Date();
+        const year = currDate.getFullYear();
+
+        function List () {
+            return (
+                <div>
+                    <h1>Hello {fName}</h1>
+                    <p>Your lucky number is {num}</p>
+                    <p>Created by {fName} {lName}</p>
+                    <p>Copyright {year}</p>
+                </div>
+            )
+        }
+          
+        ReactDOM.render(<List />, document.getElementById("root"))
+    </script>
+</body>
+</html>

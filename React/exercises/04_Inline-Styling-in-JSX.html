@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04_Inline-Styling-in-JSX</title>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/javascript" src="./js/react.development.js"></script>
+    <script type="text/javascript" src="./js/react-dom.development.js"></script>
+    <script type="text/javascript" src="./js/babel.min.js"></script>
+
+    <script type="text/babel">
+        // 想要用Inline Styling是因为可以通过次改变
+        const customStyle = {
+            color: "red",
+            fontSize: "20px",
+            border: "1px solid black"
+        };
+
+        customStyle.color = "blue";
+
+        function Hello() {
+            return <h1 style={customStyle}>Hello React</h1>
+        }
+
+        // React
+        ReactDOM.render(<Hello />, document.getElementById("root"))
+
+    </script>
+</body>
+</html>

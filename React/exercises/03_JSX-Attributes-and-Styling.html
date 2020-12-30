@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="jsx-attributes-and-styling.css" />
+    <title>jsx-attributes-and-styling</title>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/javascript" src="./js/react.development.js"></script>
+    <script type="text/javascript" src="./js/react-dom.development.js"></script>
+    <script type="text/javascript" src="./js/babel.min.js"></script>
+
+    <script type="text/babel">
+        function List() {
+            return (
+                <div>
+                <h1 className="heading" spellCheck="false">
+                    My Favourite Foods
+                </h1>
+                <div>
+                    <img
+                    className="food-img"
+                    src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/03/dark-chocolate-1296x728-header.jpg?w=1155&h=1528"
+                    alt="choloclate"
+                    />
+                    <img
+                    className="food-img"
+                    src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-roast-beef-horizontal-1540505165.jpg?crop=1xw:0.75xh;center,top&resize=1200:*"
+                    alt="beef"
+                    />
+                    <img
+                    className="food-img"
+                    src="https://img.apmcdn.org/4b2716626c9ff3f6e5dfebe520eb592c33cf1e7b/uncropped/941f50-splendid-table-french-fries.jpg"
+                    alt="french-fries"
+                    />
+                </div>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<List />, document.getElementById("root"));
+    </script>
+</body>
+</html>
