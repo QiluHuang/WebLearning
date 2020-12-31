@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04_Inline-Styling-in-JSX</title>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/javascript" src="./js/react.development.js"></script>
+    <script type="text/javascript" src="./js/react-dom.development.js"></script>
+    <script type="text/javascript" src="./js/babel.min.js"></script>
+
+    <script type="text/babel">
+        function Text() {
+            const today = new Date();
+            const hour = today.getHours();
+
+            let greeting;
+
+            const customStyle = {
+                color: ""
+            };
+
+            if (hour < 12) {
+                greeting = "Good morning";
+                customStyle.color = "red";
+            } else if (hour < 18) {
+                greeting = "Good afternoon";
+                customStyle.color = "green";
+            } else {
+                greeting = "Good evening";
+                customStyle.color = "blue";
+            }
+
+            return (
+                <h1 className="heading" style={customStyle}>
+                {greeting}
+                </h1>
+            );
+        }
+
+        ReactDOM.render(<Text />, document.getElementById("root"));
+
+    </script>
+</body>
+</html>
