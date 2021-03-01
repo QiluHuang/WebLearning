@@ -1,0 +1,9 @@
+.content {
+    color: black;
+    background-color: #C0FFEE;
+}
+
+.content.dark {
+    color: white;
+    background-color: darkgray;
+}
