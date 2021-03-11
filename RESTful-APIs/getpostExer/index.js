@@ -6,7 +6,7 @@ const PORT = 3000;
 app.use(express.json()); // for parsing application/json
 app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 app.set('views', path.join(__dirname, 'views'));
-app.use('view engine', 'ejs');
+app.set('view engine', 'ejs');
 
 
 const comments = [
@@ -28,8 +28,8 @@ const comments = [
     }
 ]
 
-app.get('comments', (req, res) => {
-    res.render('comments/index');
+app.get('/comments', (req, res) => {
+    res.render('comments/index', { comments });
 })
 
 
