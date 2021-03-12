@@ -28,14 +28,29 @@ const comments = [
     }
 ]
 
+// Get all the comments
 app.get('/comments', (req, res) => {
     res.render('comments/index', { comments });
 })
 
+// Create a new comment
+app.get('/comments/new', (req, res) => {
+    res.render('comments/new');
+})
+
+app.post('/comments', (req, res) => {
+    // console.log(req.body);
+    const { username, comment } = req.body;
+    comments.push({ username, comment });
+    // res.send("IT WORKED!");
+    res.redirect('/comments');
+})
 
 app.get('/tacos', (req, res) => {
     res.send("GET /tacos response");
 })
+
+
 
 app.post('/tacos', (req, res) => {
     const { meat, qty } = req.body;
