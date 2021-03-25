@@ -1,0 +1,71 @@
+#chat-app { 
+    display: flex;
+    flex-direction: column;
+}
+  
+.display-panel { 
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.users { 
+    border: 1px solid black;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    text-align: start;
+}
+
+.messages { 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.message { 
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+.message:hover { 
+    background-color: #badc58;
+}
+
+.meta-info { 
+    display: flex;
+    min-width: 100px;
+    background-color: lightgrey;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-text { 
+    padding-left: 20px;
+}
+
+.outgoing { 
+    text-align: center;
+}
+
+.to-send {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #6ab04c; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
