@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import Hello from './Hello';
-import MyCompProps from './Components/MyCompProps';
-import MyCompSpecialProp from './Components/MyCompSpecialProp';
-import PropsDemo from './Components/PropsDemo';
-import Ouch from './Components/OuchComp';
-import Room from './Components/Room';
+import MyCompProps from './PropsComponents/MyCompProps';
+import MyCompSpecialProp from './PropsComponents/MyCompSpecialProp';
+import PropsDemo from './PropsComponents/PropsDemo';
+import Ouch from './PropsComponents/OuchComp';
+import Room from './PropsComponents/Room';
 
 function App() {
   const animal = 'Puppies';
