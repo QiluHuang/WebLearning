@@ -1,0 +1,41 @@
+/* first level */
+#chat-app {
+    border: 1px solid black; display: flex; flex-direction: column;
+}
+.display-panel {
+    border: 1px dashed red;
+}
+.outgoing {
+    border: 1px dashed blue;
+}
+
+
+/* second level  */
+.display-panel { 
+    display: flex; 
+    flex-direction: row;
+}
+.users {
+  border: 1px dashed red;
+}
+.messages {
+    border: 1px dashed blue;
+}
+
+
+/* message css */
+.messages { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+}
+.message {
+    display: flex; 
+    flex-direction: row;
+}
+.sender-info {
+    border: 1px dashed blue;
+}
+.message-info {
+    border: 1px dashed red;
+}
