@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chat App HTML</title>
+</head>
+<body>
+    <div id="chat-app">
+        <!-- Fleshing Out User List -->
+        <ul id="users">
+            <li><div class="user"><span class="username">Bart</span></div></li>
+            <li><div class="user"><span class="username">List</span></div></li>
+        </ul>
+
+        <!-- Fleshing Out Message List -->
+        <ol id="messages">
+            <li>
+                <div class="message">
+                    <div class="sender">
+                        <img class="avatar" alt="user-avatar" src="images/avatar-bart.jpg"/>
+                        <span class="username">Bart</span>
+                        <span class="timestamp">18:45:32</span>
+                    </div>
+                    <p class="message-text">You up?</p>
+                </div>
+            </li>
+            <li>
+                <div class="message">
+                    <div class="sender">
+                        <img class="avatar" alt="user-avatar" src="images/avatar-lisa.jpg"/>
+                        <span class="username">List</span>
+                        <span class="timestamp">18:46:50</span>
+                    </div>
+                    <p class="message-text">Yeah, still working on this INFO6250 work, but I keep getting distracted by cat videos?</p>
+                </div>
+            </li>
+        </ol>
+
+        <!-- Fleshing Out Outgoing -->
+        <div class="outgoing">
+            <form action="/chat">
+                <input class="to-send" value="" placeholder="Enter message to send"/>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
