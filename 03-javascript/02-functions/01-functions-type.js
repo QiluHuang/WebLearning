@@ -26,3 +26,10 @@ const fromAnExpression = function ( someValue ) {
 const add = function (x, y) {
     return x + y;
 }
+
+
+
+// 3) Fat Arrow functions
+const someFunc = (arg) => {
+    console.log(arg);
+}
