@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Tags for Forms</title>
+</head>
+<body>
+    <form action="SOME_URL" method="GET">
+        <label>N: <input name="field" placeholder="try it"></label>
+        <label>Password: <input type="password" name="otherField" value="demo"/></label>
+        
+        <!-- Checkbox -->
+        <label>Checkbox: <input type="checkbox" name="checkField" checked/></label>
+
+        <!-- radio -->
+        <label>Radio1: <input type="radio" name="radioField" value="One"/></label>
+        <label>Radio2: <input type="radio" name="radioField" value="Two"/></label>
+        
+        <!-- select -->
+        <select name="selectField">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+        </select>
+
+        <button type="submit">Try it</button>
+    </form>
+</body>
+</html>
