@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dynamic Page</title>
+</head>
+<body>
+    <div>
+        <div>
+            <h1>Query params</h1>    
+            <a href="dynamic">See a Dynamic Page</a> 
+        </div>
+
+        <br>
+
+        <div>
+            <h1>Body params</h1>
+            <form action="/response" method="POST">
+                <label>
+                    <span>Name: </span>
+                    <input type="text" name="username" placeholder="Type Here">
+                </label>
+                <label>
+                    <span>Favorite Animal: </span>
+                    <select name="favorite">
+                        <option value="cat">Cat</option>
+                        <option value="dogs">Dogs</option>
+                    </select>
+                </label>
+                <button type="submit">What happens next?</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
